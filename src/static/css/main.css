@@ -222,6 +222,18 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
     
 }
+
+.buddyPic{
+    position: relative;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+
+}
 .previous:active {
   background-color: #02490c
 
@@ -264,7 +276,37 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   transform: translateY(4px);
 }
 
-	
+.messageBud {
+    background-color: #010702; /* Green */
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 38%;
+    height: 80px;
+    bottom: 35%;
+    font-family: fantasy;
+    padding: 15px 32px;
+    text-align: center;
+    width: 180px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.messageBud:hover {background-color: #787878 
+;
+}
+
+.messageBud:active {
+  background-color: #787878 
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .study {
     background-color: #2a6b24; /* Green */
