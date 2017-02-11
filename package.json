@@ -1,0 +1,35 @@
+{
+  "name": "tartanhacks",
+  "version": "1.0.0",
+  "description": "a social network for neeerds",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjoshi21/TartanHacks.git"
+  },
+  "keywords": [
+    "cmu",
+    "social network"
+  ],
+  "author": "Tanvi Joshi, Shri Kedia, Danielle Hu,Nick Sieger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjoshi21/TartanHacks.git"
+  },
+  "homepage": "https://github.com/tjoshi21/TartanHacks.git#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
+    "express-error-handler": "^1.1.0",
+    "express-session": "^1.14.0",
+    "pug": "^0.1.0",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1",
+    "request": "^2.74.0",
+    "mongoose": "^3.6"
+  }
+}

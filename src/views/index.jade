@@ -1,0 +1,16 @@
+extends ./base.jade
+head
+  style
+    include display.css
+block body
+
+  .page.splash
+
+    h1 Gigster State Diagram
+
+    block content
+    form(name="search for gigs", method="post",class="display")
+        div.input
+            input(type="text",id = "name", name="gig")
+        div.actions
+            input(type="submit", value="add")
