@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressSession = require('express-session');
 var errorHandler = require('express-error-handler');
-var d3 = require("d3");
 
 // var db = require('./lib/db')
 var config = require('./config');
@@ -39,10 +38,6 @@ app.get('/', function (req, res) {
   	return res.render('gig_01.jade');
 });
 
-app.post('/',function(req,res){
-	var name = req.body.gig;
-	return res.redirect('/gig/' + name);
-});
 
 // Launch server
 ////////////////////////////////////////
