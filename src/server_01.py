@@ -37,6 +37,27 @@ def load_user(userid):
 def homepage(andrewid):
     return render_template('homepage.html')
 
+@app.route('/buddysetup/<andrewid>',methods=['GET','POST'])
+@login_required
+def buddysteup(andrewid):
+    return render_template('buddysetup.html')
+
+@app.route('/buddypage/<andrewid>',methods=['GET','POST'])
+@login_required
+def buddypage(andrewid):
+    return render_template('buddypage.html')
+    
+@app.route('/signup,methods=['GET','POST'])
+def signup(andrewid):
+    if request.method == 'POST':
+        
+        success = false
+        if success:
+            return redirect(url_for('login.html')
+        else:
+            return redirect(url_for('signup.html')
+    return render_template('signup.html')
+    
 
 @app.route('/',methods=['GET','POST'])
 @app.route('/login',methods=['GET','POST'])
