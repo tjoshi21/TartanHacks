@@ -1,0 +1,9 @@
+.sidebar {
+	display: inline-block;
+	min-width: 300px;
+
+}
+
+.display {
+	border: 10px solid red;
+}

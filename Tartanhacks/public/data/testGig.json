@@ -1,0 +1,31 @@
+{
+    "nodes" : [{"data":{"type" : "GIG",
+                "name" : "TestGig",
+                "cost" : 7000,
+                "price" : 5000
+               }},
+               {"data":{"type" : "CLI",
+               "name" : "Hugh Jackman"
+               }},
+               {"data":{"type" : "PM",
+                "name" : "Professor X"
+               }},
+               {"data":{"type":"WRK",
+                "name": "Evan Peters"
+               }},
+               {"data":{"type": "WRK",
+                "name": "Sue Storm"
+               }}],               
+   "links" : [{"source":1,"target":2,"data":{"type" : "COM","capacity" : 0.53}},
+              {"source":2,"target":3,"data":{"type" : "COM","capacity" : 0.45}},
+              {"source":2,"target":4,"data":{"type" : "COM","capacity" : 0.76}},
+              {"source":3,"target":4,"data":{"type" : "COM","capacity" : 0.12}},
+              {"source":1,"target":2,"data":{"type" : "PAY","capacity" : 1.0}},
+              {"source":1,"target":3,"data":{"type" : "PAY","capacity" : 1.0}},
+              {"source":1,"target":4,"data":{"type" : "PAY","capacity" : 1.0}},
+              {"source":1,"target":0,"data":{"type" : "PAY","capacity" : 0.87}},
+              {"source":3,"target":0,"data":{"type" : "COD","capacity" : 0.61}},
+              {"source":4,"target":0,"data":{"type" : "COD","capacity" : 0.27}},
+              {"source":0,"target":1,"data":{"type" : "COM","capacity" : 1.0}}]
+}                        
+           

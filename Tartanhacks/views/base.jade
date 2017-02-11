@@ -1,0 +1,51 @@
+doctype
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //- jquery
+    <script type="text/javascript" src="/public/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/jquery/jquery-ui.min.js"></script>
+
+    //- bootstrap
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    //- Open sans
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+
+    //- <!-- font awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    //- <!-- moment js -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+
+    //- <!-- less stylesheet -->
+    <link rel="stylesheet/less" type="text/css" id="theme" href="/public/style/style.less"/>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+
+    //- <!-- socket io -->
+    <script src="//cdn.socket.io/socket.io-1.4.5.js"></script>
+
+    //- <!-- ractive -->
+    <script src='//cdn.ractivejs.org/latest/ractive.min.js'></script>
+    <script src='/public/js/ractive-transitions-fade.js'></script>
+
+  body
+    block nav
+      nav.navbar.navbar-fixed-top
+        .container
+          .navbar-header
+            a.navbar-brand(href="/")
+              img(src='/public/img/gigster.png',height="24px",style="margin:0px;")
+
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/') Home
+
+    .container
+      block body
+
+
