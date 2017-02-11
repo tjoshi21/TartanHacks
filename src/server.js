@@ -42,6 +42,11 @@ app.get('/login',function(req,res){
     return res.render('login.pug');
 });
 
+app.get('/profile:username',function(req,res){
+    var username = request.params.username;
+    return res.render('profile.pug',username);
+});
+
 
 // Launch server
 ////////////////////////////////////////
