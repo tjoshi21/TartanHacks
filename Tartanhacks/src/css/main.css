@@ -9,24 +9,29 @@ button {
 }
 
 .me {
-    background-color: #008CBA; /* Green */
+    background-color: #FAFAD2		; /* Green */
     border: none;
     border-radius: 12px;
-    position: relative;
+    position: absolute;
     left: 85%;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
-.me:hover {background-color: #236782}
+.me:hover {background-color: #efefed
+;
+}
 
 .me:active {
-  background-color: #236782;
+  background-color: #efefed
+
+;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -55,23 +60,39 @@ button {
 }
 
 .help {
-    background-color: #008CBA; /* Green */
-    border: none;
+    background-color: #701616; /* Green */
+    border: 1px;
     color: white;
     left: 80%;
+    font-weight: bold;
     border-radius: 12px;
     position: relative;
     padding: 10px 24px;
     text-align: center;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.help:hover {background-color: black
+;
 }
 
+.help:active {
+  background-color: black
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 .event {
-    background-color: #008CBA; /* Green */
-    border: none;
+    background-color: #701616;
     color: white;
+    font-weight: bold;
     border-radius: 12px;
     position: relative;
     left: 30px;
@@ -83,13 +104,66 @@ button {
     font-size: 16px;
 }
 
+.dates {
+    background-color: #60031e; /* Green */
+    border: none;
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    left: 70%;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.previous {
+    background-color: #03601b; /* Green */
+    font-weight: bold;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+.chat {
+    background-color: #010702; /* Green */
+    border: none;
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    font-weight: bold;
+    left: 70%;
+    bottom: 35%;
+    padding: 15px 32px;
+    text-align: center;
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .study {
-    background-color: #008CBA; /* Green */
+    background-color: #2a6b24; /* Green */
     border: none;
     color: white;
     border-radius: 12px;
     position: relative;
     left: 40%;
+    font-weight: bold;
     width: 170px;
     padding: 15px 32px;
     text-align: center;
@@ -99,8 +173,9 @@ button {
 }
 
 .friend {
-    background-color: #008CBA; /* Green */
+    background-color: #2a6b24; /* Green */
     border: none;
+    font-weight: bold;
     color: white;
     border-radius: 12px;
     position: relative;
@@ -114,12 +189,14 @@ button {
 }
 
 .hometown {
-    background-color: #008CBA; /* Green */
+    background-color: #701616
+; /* Green */
     border: none;
     color: white;
     border-radius: 12px;
     position: relative;
     left: 40%;
+    font-weight: bold;
     width: 170px;
     padding: 15px 32px;
     text-align: center;
@@ -129,8 +206,10 @@ button {
 }
 
 .custom {
-    background-color: #008CBA; /* Green */
+    background-color: #701616
+; /* Green */
     border: none;
+    font-weight: bold;
     color: white;
     border-radius: 12px;
     position: relative;
@@ -144,12 +223,13 @@ button {
 }
 
 .favorites {
-    background-color: #008CBA; /* Green */
+    background-color: #2a6b24; /* Green */
     border: none;
     color: white;
     border-radius: 12px;
     position: relative;
     left: 40%;
+    font-weight: bold;
     width: 170px;
     padding: 15px 32px;
     text-align: center;
@@ -191,6 +271,7 @@ b, strong {
 samp {
     display: none;
 }
+
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
