@@ -7,17 +7,17 @@
         <title>Home Page</title>
         <meta name="description" content="Homepage-y things">
         <script src="../js/homepage.js"></script>
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="/static/css/main.css">
     </head>
     <body>
         
         
-        <h1>My Plaid Profile</h1>
+        <h1 class="main">My Plaid Profile</h1>
         
         
         
         <p>
-            <button type="button" class="Home" id="MeBtn">Home</button>
+            <button type="button" class="home" id="MeBtn">Home</button>
             
         </p>
         
@@ -25,16 +25,25 @@
 <!-- The Modal -->
 
 
-        
+        <img src="/static/images/picture.png" alt="Visual Approximation" class="profilePic" style="width:304px;height:228px;">
   
             <p>Name: #{name}    AndrewId: #{andrewId}</p> 
         <p>
             Major: #{major}</p>
+        
         <p>
             Dept: #{dept}
-             <button type="button" class="dates">My Buddy Dates</button>
+             
         </p>
         
+         <p>
+            Courses: #{courses}
+            
+        </p>
+        <div>
+        <button type="button" class="dates">My Buddy Dates</button>
+            <button type="button" class="previous">My Buddies</button>
+        </div>
         <!--
             GET STARTED WITH YOUR OWN FILES
         -->
@@ -44,17 +53,14 @@
            
 
         
-        <p>
-            Courses: #{courses}
-            <button type="button" class="previous">My Buddies</button>
-        </p>
+       
         
         <p>
             
         </p>
         
         <p>
-            <button type="button" class="chat">Chat Room</button>
+            
         </p>
         
         <p>

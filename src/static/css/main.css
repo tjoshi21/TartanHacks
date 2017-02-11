@@ -124,12 +124,47 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
   transform: translateY(4px);
 }
 
+.message {
+    background-color: #701616;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: fantasy;
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.message:hover {background-color: #b20709
+;
+}
+
+.message:active {
+  background-color: #b20709
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.matchPic{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
 .dates {
-    background-color: #60031e; /* Green */
+    background-color: #60031e; 
     border: none;
     color: white;
     border-radius: 12px;
-    position: absolute;
     left: 70%;
     top: 30%;
     font-family: fantasy;
@@ -137,6 +172,7 @@ repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2
     padding: 15px 32px;
     text-align: center;
     width: 170px;
+    height: 80px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -162,9 +198,10 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     color: white;
     border-radius: 12px;
     position: absolute;
-    left: 70%;
+    right: 10%;
+    height: 80px;
     font-family: fantasy;
-    bottom: 20%;
+    bottom: 30%;
     padding: 15px 32px;
     text-align: center;
     width: 170px;
@@ -178,6 +215,13 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 ;
 }
 
+.profilePic{
+    position: absolute;
+    left:50%;
+    top: 10%;
+    
+    
+}
 .previous:active {
   background-color: #02490c
 
@@ -193,9 +237,10 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border: none;
     color: white;
     border-radius: 12px;
-    position: absolute;
     font-weight: bold;
-    left: 70%;
+    position: relative;
+    left: 20%;
+    height: 80px;
     bottom: 35%;
     font-family: fantasy;
     padding: 15px 32px;
@@ -413,6 +458,29 @@ samp {
     display: none;
 }
 
+.home{
+    background-color: #008CBA; /* Green */
+    border: none;
+    font-family: fantasy;
+    border-radius: 12px;
+    position: relative;
+
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.home:hover {background-color: #236782}
+
+.home:active {
+  background-color: #236782;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
