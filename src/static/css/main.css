@@ -1,20 +1,24 @@
 html {
-    background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    background-color: hsl(2, 57%, 40%);
+background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+
     -webkit-font-smoothing: antialiased;
 }
 
-button {
-    
-}
 
+.main{
+    font-family: fantasy;
+}
 .me {
     background-color: #FAFAD2		; /* Green */
     border: none;
     border-radius: 12px;
-    position: absolute;
-    left: 85%;
+    position: relative;
+    left: 50%;
     color: black;
+    font-family: fantasy;
     padding: 15px 32px;
     text-align: center;
     font-weight: bold;
@@ -39,6 +43,7 @@ button {
 .make-account{
     background-color: #008CBA; /* Green */
     border: none;
+    font-family: fantasy;
     border-radius: 12px;
     position: relative;
 
@@ -68,6 +73,7 @@ button {
     border-radius: 12px;
     position: relative;
     padding: 10px 24px;
+    font-family: fantasy;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -98,10 +104,24 @@ button {
     left: 30px;
     padding: 15px 32px;
     text-align: center;
+    font-family: fantasy;
     width: 170px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.event:hover {background-color: #b20709
+;
+}
+
+.event:active {
+  background-color: #b20709
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .dates {
@@ -111,6 +131,8 @@ button {
     border-radius: 12px;
     position: absolute;
     left: 70%;
+    top: 30%;
+    font-family: fantasy;
     font-weight: bold;
     padding: 15px 32px;
     text-align: center;
@@ -118,6 +140,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.dates:hover {background-color: #b20709
+;
+}
+
+.dates:active {
+  background-color: #b20709
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .previous {
@@ -128,6 +163,7 @@ button {
     border-radius: 12px;
     position: absolute;
     left: 70%;
+    font-family: fantasy;
     bottom: 20%;
     padding: 15px 32px;
     text-align: center;
@@ -135,6 +171,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.previous:hover {background-color: #02490c
+;
+}
+
+.previous:active {
+  background-color: #02490c
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
@@ -148,13 +197,29 @@ button {
     font-weight: bold;
     left: 70%;
     bottom: 35%;
+    font-family: fantasy;
     padding: 15px 32px;
     text-align: center;
     width: 170px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
 }
+.chat:hover {background-color: #787878 
+;
+}
+
+.chat:active {
+  background-color: #787878 
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+	
 
 .study {
     background-color: #2a6b24; /* Green */
@@ -164,12 +229,28 @@ button {
     position: relative;
     left: 40%;
     font-weight: bold;
+    font-family: fantasy;
     width: 170px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.study:hover {background-color: #02490c
+
+;
+}
+
+.study:active {
+  background-color: #02490c
+
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .friend {
@@ -181,11 +262,27 @@ button {
     position: relative;
     left: 30px;
     width: 170px;
+    font-family: fantasy;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.friend:hover {background-color: #02490c
+
+;
+}
+
+.friend:active {
+  background-color: #02490c
+
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .hometown {
@@ -196,6 +293,7 @@ button {
     border-radius: 12px;
     position: relative;
     left: 40%;
+    font-family: fantasy;
     font-weight: bold;
     width: 170px;
     padding: 15px 32px;
@@ -203,6 +301,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.hometown:hover {background-color: #b20709
+;
+}
+
+.hometown:active {
+  background-color: #b20709
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .custom {
@@ -211,6 +322,7 @@ button {
     border: none;
     font-weight: bold;
     color: white;
+    font-family: fantasy;
     border-radius: 12px;
     position: relative;
     left: 30px;
@@ -220,6 +332,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.custom:hover {background-color: #b20709
+;
+}
+
+.custom:active {
+  background-color: #b20709
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .favorites {
@@ -231,11 +356,27 @@ button {
     left: 40%;
     font-weight: bold;
     width: 170px;
+    font-family: fantasy;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.favorites:hover {background-color: #02490c
+
+;
+}
+
+.favorites:active {
+  background-color: #02490c
+
+
+;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 body {
