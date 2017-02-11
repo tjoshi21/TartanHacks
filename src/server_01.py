@@ -3,7 +3,7 @@ from flask import Flask, g, request, render_template,\
 
 from flask.ext.login import LoginManager, UserMixin, \
                                 login_required, login_user, logout_user                   
-  
+from urlparse import urlparse, urljoin  
 #config  
 app = Flask(__name__)
 app.config.from_object('config')
@@ -27,9 +27,19 @@ class User(UserMixin):
 # make some dummy users
 users = [User(id) for id in range(1, 21)]     
      
+ #helpers    
+     
 @login_manager.user_loader
 def load_user(userid):
     return User(userid)     
+     
+def is_safe_url(target):
+    ref_url = urlparse(request.host_url)
+    test_url = urlparse(urljoin(request.host_url, target))
+    return test_url.scheme in ('http', 'https') and \
+           ref_url.netloc == test_url.netloc     
+     
+     
      
 #server routes
 @app.route('/homepage/<andrewid>',methods=['GET','POST'])
@@ -47,15 +57,15 @@ def buddysteup(andrewid):
 def buddypage(andrewid):
     return render_template('buddypage.html')
     
-@app.route('/signup,methods=['GET','POST'])
+@app.route('/signup',methods=['GET','POST'])
 def signup(andrewid):
     if request.method == 'POST':
         
         success = false
         if success:
-            return redirect(url_for('login.html')
+            return redirect(url_for('login'))
         else:
-            return redirect(url_for('signup.html')
+            return redirect(url_for('signup'))
     return render_template('signup.html')
     
 
@@ -73,9 +83,10 @@ def login():
             login_user(user)
             
             next = request.args.get('next')
-            # if not is_safe_url(next):
-                # return flask.abort(400)
-            return redirect(next or url_for('homepage',andrewid=username))
+            if not is_safe_url(next):
+                return flask.abort(400)
+            else:
+                return redirect(next or url_for('homepage',andrewid=username))
         else:   
             return render_template('login.html') 
     return render_template('login.html')   
@@ -84,7 +95,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('login.html'))
+    return redirect(url_for('login'))
 
 #launch the server
 app.secret_key = 'the mac address is....'   
