@@ -1,0 +1,36 @@
+{
+  "name": "gigster-gigstate-model",
+  "version": "1.0.0",
+  "description": "Model of the Gigs, Gigsters and Clients",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquidlabs-co/gigster-gigstate-model.git"
+  },
+  "keywords": [
+    "gigster",
+    "state"
+  ],
+  "author": "Nick Sieger, Yush Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liquidlabs-co/gigster-gigstate-model/issues"
+  },
+  "homepage": "https://github.com/liquidlabs-co/gigster-gigstate-model#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
+    "express-error-handler": "^1.1.0",
+    "express-session": "^1.14.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1",
+    "request": "^2.74.0",
+    "mongoose": "^3.6",
+    "d3" : "^4.2"
+  }
+}
