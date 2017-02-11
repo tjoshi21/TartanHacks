@@ -37,12 +37,13 @@ def load_user(userid):
 def homepage(andrewid):
     return render_template('homepage.html')
 
-    
 
 @app.route('/',methods=['GET','POST'])
 @app.route('/login',methods=['GET','POST'])
 def login():
+    app.logger.debug('called the login route' + str(request.form))
     if request.method == 'POST':
+        app.logger.debug('we have a login attempt')
         username = request.form['username']
         password = request.form['password']        
         if password == username + "_secret":
@@ -50,10 +51,10 @@ def login():
             user = User(id)
             login_user(user)
             
-            next = flask.request.args.get('next')
-            if not is_safe_url(next):
-                return flask.abort(400)
-            return redirect(next or flask.url_for('homepage',andrewid=username))
+            next = request.args.get('next')
+            # if not is_safe_url(next):
+                # return flask.abort(400)
+            return redirect(next or url_for('homepage',andrewid=username))
         else:   
             return render_template('login.html') 
     return render_template('login.html')   
@@ -68,5 +69,4 @@ def logout():
 app.secret_key = 'the mac address is....'   
 
 if __name__ == '__main__':
-    
-    app.run(debug = True)
+    app.run()
