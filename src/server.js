@@ -35,7 +35,7 @@ app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 // require('./routes/api')(app)
 // require('./routes/xhr')(app)
 app.get('/', function (req, res) {
-  	return res.render('gig_01.jade');
+  	return res.render('gig_01.pug');
 });
 
 
